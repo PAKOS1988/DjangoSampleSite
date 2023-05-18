@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ОПОВЕЩЕНИЕ ОБ УДАЛЕНИИ</title>
+</head>
+<body>
+<p> Вы действительно хотите удалить {{item}} ? </p>
+<a href="{% url 'list'%}">Отменить</a>
+<form method="POST" action="">
+    {% csrf_token %}
+    <input type="submit" name="delete" value="ДА">
+</form>
+</body>
+</html>

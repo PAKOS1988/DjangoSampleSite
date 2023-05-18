@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ОБНОВЛЕНИЕ ЗАДАЧИ</title>
+</head>
+<body>
+<h1>Изменение задачи</h1>
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" name="update_task" value="Изменить">
+</form>
+</body>
+</html>
